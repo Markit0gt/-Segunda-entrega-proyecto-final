@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
 }
+$bordes: black solid 3px;
 /* header */
 #nave{
     div{
@@ -11,9 +12,19 @@
         display: flex;
         justify-content: center;
     }
+    a{
+        color: whitesmoke;
+    }
 }
-#navbarNav a{
-    text-align: center;
+#navbarNav{
+    a{
+        text-align: center;
+        font-size: 20px;
+        color: whitesmoke;
+    }
+    a:hover{
+        color: black;
+    }
 }
 /* header */
 /* footer */
@@ -29,13 +40,13 @@
 /* MAIN DE PAGINA PRINCIPAL */
 body{
     background-color: rgb(170, 169, 169);
-}
-.row img{
-    width: 100%;
+    img{
+        width: 100%;
+    }
 }
 .jumbotron-fluid{
-    border-bottom: black solid 3px;
-    border-top: black solid 3px;;
+    border-bottom:$bordes;
+    border-top: $bordes;
 }
 #img1{
     width: 80%;
@@ -58,6 +69,16 @@ iframe{
 }
 #iframe{
     text-align: center;
+}
+#ultimosalbums{
+    border-top: $bordes;
+    border-bottom: $bordes;
+    margin-bottom: 50px;
+    text-align-last: center;
+    h2{
+        color: black;
+        font-size: 40px;
+    }
 }
 /* MAIN DE PAGINA PRINCIPAL */
 /*  PAG IMAGENES */
@@ -143,9 +164,7 @@ footer{
     #img2{
         margin-top: 20px;
     }
-    .row img{
-        width: 100%;
-    }
+
     #img1{
         width: 50%;
     }
@@ -296,4 +315,9 @@ footer{
         width: 60%;
     }
     /* pag imagenes */
+    // Pag main
+    #img2{
+        margin-top: 2%;
+    }
+    // pag main
 }
