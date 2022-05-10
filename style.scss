@@ -1,0 +1,299 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/* header */
+#nave{
+    div{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+}
+#navbarNav a{
+    text-align: center;
+}
+/* header */
+/* footer */
+#footer-socials{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    a{
+        color: rgb(58, 58, 58);
+    }
+}
+/* footer */
+/* MAIN DE PAGINA PRINCIPAL */
+body{
+    background-color: rgb(170, 169, 169);
+}
+.row img{
+    width: 100%;
+}
+.jumbotron-fluid{
+    border-bottom: black solid 3px;
+    border-top: black solid 3px;;
+}
+#img1{
+    width: 80%;
+}
+
+#img2{
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    color: white;
+    font-size: small;
+    width: 100%;
+    text-align: center;
+}
+iframe{
+    width: 80%;
+    height: 300px;
+    margin-top: 20px;
+}
+#iframe{
+    text-align: center;
+}
+/* MAIN DE PAGINA PRINCIPAL */
+/*  PAG IMAGENES */
+#demo{
+    width: 95%;
+    margin-top: 100px;
+    box-shadow: 6px 5px 5px black;
+}
+.carousel-item img{
+    width: 100%;
+}
+.jumbotron{
+    margin-top: 20px;
+    width: 70%;
+    border: solid black 3px;
+}
+/*  PAG IMAGENES */
+/* Pag VIDEOS */
+
+.btn:hover{
+    color: black;
+}
+.embed-responsive{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    overflow: visible;
+}
+/* Pag VIDEOS */
+/* PAG SERVICIOS */
+#calendario{
+    width: 100%;
+}
+/* PAG SERVICIOS */
+/* PAG CONTACTOS */
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.bigicon{
+    color: whitesmoke;
+}
+.text-center{
+    color: whitesmoke;
+}
+#jumbotroncontac {
+    margin-top: 20px;
+}
+/* PAG CONTACTOS */
+/* footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.socials{
+    letter-spacing: 40px;
+}
+/* footer */
+
+/* Bootsrap */
+.form-group{
+    text-align: center;
+    width: 80%;
+    label{
+        color: rgb(168, 168, 168);
+        font-size: 20px;
+    }
+}
+@media (min-width: 576px){
+    #img2{
+        margin-top: 20px;
+    }
+    .row img{
+        width: 100%;
+    }
+    #img1{
+        width: 50%;
+    }
+    h2{
+        color: white;
+        font-size: small;
+        width: 100%;
+        text-align: center;
+    }
+    iframe{
+        width: 80%;
+        margin-top: 20px;
+    }
+    /* pag contacto */
+    fieldset{
+        margin-top: 20px;
+    }
+    /* pag contacto */
+    /*  PAG IMAGENES */
+    .jumbotron {
+        margin-top: 20px;
+    }
+    #demo{
+        margin-top: 50px;
+    }
+    /*  PAG IMAGENES */
+    /* Pag VIDEOS */
+    .embed-responsive{
+        margin-top: 15px;
+    }
+    /* Pag VIDEOS */
+    /* PAG SERVICIOS */
+    #calendario{
+        width: 80%;
+    }
+    /* PAG SERVICIOS */
+}
+@media (min-width: 768px){
+    #img2{
+        margin-top: 10px;
+        img{
+            width: 75%;
+        }
+    }
+    .row img{
+        width: 100%;
+    }
+    #img1{
+        width: 40%;
+    }
+    h2{
+        color: white;
+        font-size: small;
+        width: 100%;
+        text-align: center;
+    }
+    iframe{
+        width: 80%;
+        margin-top: 10px;
+    }
+    /* pag contacto */
+    fieldset{
+        margin-top: 40px;
+    }
+    .col-md-8{
+        max-width: 100%;
+    }
+    /* pag contacto */
+    /*  PAG IMAGENES */
+    .jumbotron {
+        margin-top: 20px;
+    }
+    #demo{
+        margin-top: 50px;
+        width: 85%;
+    }
+    /*  PAG IMAGENES */
+    /* Pag VIDEOS */
+    .embed-responsive{
+        width: 75%;
+    }
+    #jumbotronvid{
+        width: 60%;
+    }
+    /* Pag VIDEOS */
+}
+@media (min-width: 992px){
+    #img1{
+        width: 25%;
+    }
+    #img2{
+        margin-top: 60px;
+        img{
+            width: 100%;
+        }
+    }
+    .row img{
+        width: 100%;
+    }
+    h2{
+        color: white;
+        font-size: small;
+        width: 100%;
+        text-align: center;
+    }
+    iframe{
+        width: 80%;
+        margin-top: 60px;
+    }
+    /* pag contacto */
+    fieldset{
+        margin-top: 40px;
+    }
+    .col-md-8{
+        max-width: 100%;
+    }
+    /* pag contacto */
+    /*  PAG IMAGENES */
+    .jumbotron {
+        margin-top: 20px;
+        width: 60%;
+    }
+    #demo{
+        margin-top: 50px;
+        width: 75%;
+    }
+    /*  PAG IMAGENES */
+    /* Pag VIDEOS */
+    .embed-responsive{
+        width: 70%;
+    }
+    #jumbotronvid{
+        width: 50%;
+    }
+    /* Pag VIDEOS */
+    /* PAG SERVICIOS */
+    #calendario{
+        width: 65%;
+    }
+    /* PAG SERVICIOS */
+}
+@media (min-width: 1200px){
+    /* pag imagenes */
+    .jumbotron{
+        width: 40%;
+    }
+    #demo{
+        width: 60%;
+    }
+    /* pag imagenes */
+}
