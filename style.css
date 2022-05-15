@@ -1,3 +1,4 @@
+@import url(variables.scss);
 * {
   margin: 0%;
   padding: 0%;
@@ -5,7 +6,7 @@
 
 /* header */
 #nave div {
-  width: 100%;
+  width: width 100%;
 }
 
 #nave nav {
@@ -35,7 +36,7 @@
 /* footer */
 #footer-socials {
   text-align: center;
-  width: 100%;
+  width: width 100%;
   font-size: 20px;
 }
 
@@ -50,7 +51,7 @@ body {
 }
 
 body img {
-  width: 100%;
+  width: width 100%;
 }
 
 .jumbotron-fluid {
@@ -59,7 +60,7 @@ body img {
 }
 
 #img1 {
-  width: 80%;
+  width: width 100%;
 }
 
 #img2 {
@@ -68,9 +69,9 @@ body img {
 }
 
 h2 {
-  color: white;
+  color: red;
   font-size: small;
-  width: 100%;
+  width: width 100%;
   text-align: center;
 }
 
@@ -106,7 +107,7 @@ iframe {
 }
 
 .carousel-item img {
-  width: 100%;
+  width: width 100%;
 }
 
 .jumbotron {
@@ -131,7 +132,7 @@ iframe {
 /* Pag VIDEOS */
 /* PAG SERVICIOS */
 #calendario {
-  width: 100%;
+  width: width 100%;
 }
 
 /* PAG SERVICIOS */
@@ -179,7 +180,7 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: width 100%;
 }
 
 .socials {
@@ -208,7 +209,7 @@ footer {
   h2 {
     color: white;
     font-size: small;
-    width: 100%;
+    width: width 100%;
     text-align: center;
   }
   iframe {
@@ -248,7 +249,7 @@ footer {
     width: 75%;
   }
   .row img {
-    width: 100%;
+    width: width 100%;
   }
   #img1 {
     width: 40%;
@@ -256,7 +257,7 @@ footer {
   h2 {
     color: white;
     font-size: small;
-    width: 100%;
+    width: width 100%;
     text-align: center;
   }
   iframe {
@@ -268,7 +269,7 @@ footer {
     margin-top: 40px;
   }
   .col-md-8 {
-    max-width: 100%;
+    max-width: width 100%;
   }
   /* pag contacto */
   /*  PAG IMAGENES */
@@ -298,15 +299,15 @@ footer {
     margin-top: 60px;
   }
   #img2 img {
-    width: 100%;
+    width: width 100%;
   }
   .row img {
-    width: 100%;
+    width: width 100%;
   }
   h2 {
     color: white;
     font-size: small;
-    width: 100%;
+    width: width 100%;
     text-align: center;
   }
   iframe {
@@ -318,7 +319,7 @@ footer {
     margin-top: 40px;
   }
   .col-md-8 {
-    max-width: 100%;
+    max-width: width 100%;
   }
   /* pag contacto */
   /*  PAG IMAGENES */
