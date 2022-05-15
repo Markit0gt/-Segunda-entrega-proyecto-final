@@ -3,7 +3,11 @@
     padding: 0%;
 }
 @import url(variables.scss);
-
+$bordes: black solid 3px;
+$maxwid: width 100%;
+$color1: rgb(58, 58, 58);
+$color2: white;
+$color3: whitesmoke;
 /* header */
 #nave{
     div{
@@ -14,14 +18,14 @@
         justify-content: center;
     }
     a{
-        color: whitesmoke;
+        color: $color3;
     }
 }
 #navbarNav{
     a{
         text-align: center;
         font-size: 20px;
-        color: whitesmoke;
+        color: $color3;
     }
     a:hover{
         color: black;
