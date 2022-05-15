@@ -2,11 +2,12 @@
     margin: 0%;
     padding: 0%;
 }
-$bordes: black solid 3px;
+@import url(variables.scss);
+
 /* header */
 #nave{
     div{
-        width: 100%;
+        width: $maxwid;
     }
     nav{
         display: flex;
@@ -30,7 +31,7 @@ $bordes: black solid 3px;
 /* footer */
 #footer-socials{
     text-align: center;
-    width: 100%;
+    width: $maxwid;
     font-size: 20px;
     a{
         color: rgb(58, 58, 58);
@@ -41,7 +42,7 @@ $bordes: black solid 3px;
 body{
     background-color: rgb(170, 169, 169);
     img{
-        width: 100%;
+        width: $maxwid;
     }
 }
 .jumbotron-fluid{
@@ -49,7 +50,7 @@ body{
     border-top: $bordes;
 }
 #img1{
-    width: 80%;
+    width: $maxwid;
 }
 
 #img2{
@@ -57,9 +58,9 @@ body{
     margin-top: 20px;
 }
 h2{
-    color: white;
+    color: red;
     font-size: small;
-    width: 100%;
+    width: $maxwid;
     text-align: center;
 }
 iframe{
@@ -88,7 +89,7 @@ iframe{
     box-shadow: 6px 5px 5px black;
 }
 .carousel-item img{
-    width: 100%;
+    width: $maxwid;
 }
 .jumbotron{
     margin-top: 20px;
@@ -110,7 +111,7 @@ iframe{
 /* Pag VIDEOS */
 /* PAG SERVICIOS */
 #calendario{
-    width: 100%;
+    width: $maxwid;
 }
 /* PAG SERVICIOS */
 /* PAG CONTACTOS */
@@ -144,7 +145,7 @@ footer{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: $maxwid;
 }
 .socials{
     letter-spacing: 40px;
@@ -169,9 +170,9 @@ footer{
         width: 50%;
     }
     h2{
-        color: white;
+        color: $color2;
         font-size: small;
-        width: 100%;
+        width: $maxwid;
         text-align: center;
     }
     iframe{
@@ -210,15 +211,15 @@ footer{
         }
     }
     .row img{
-        width: 100%;
+        width: $maxwid;
     }
     #img1{
         width: 40%;
     }
     h2{
-        color: white;
+        color: $color2;
         font-size: small;
-        width: 100%;
+        width: $maxwid;
         text-align: center;
     }
     iframe{
@@ -230,7 +231,7 @@ footer{
         margin-top: 40px;
     }
     .col-md-8{
-        max-width: 100%;
+        max-width: $maxwid;
     }
     /* pag contacto */
     /*  PAG IMAGENES */
@@ -258,16 +259,16 @@ footer{
     #img2{
         margin-top: 60px;
         img{
-            width: 100%;
+            width: $maxwid;
         }
     }
     .row img{
-        width: 100%;
+        width: $maxwid;
     }
     h2{
-        color: white;
+        color: $color2;
         font-size: small;
-        width: 100%;
+        width: $maxwid;
         text-align: center;
     }
     iframe{
@@ -279,7 +280,7 @@ footer{
         margin-top: 40px;
     }
     .col-md-8{
-        max-width: 100%;
+        max-width: $maxwid;
     }
     /* pag contacto */
     /*  PAG IMAGENES */
