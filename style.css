@@ -1,15 +1,18 @@
-@import url(variables.scss);
 * {
   margin: 0%;
   padding: 0%;
 }
 
 /* header */
-#nave div {
-  width: width 100%;
+#nave {
+  background-color: #3a3a3a;
 }
 
-#nave nav {
+#nave div {
+  width: 100%;
+}
+
+#nave div nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,17 +21,21 @@
           justify-content: center;
 }
 
-#nave a {
+#nave div nav a {
   color: whitesmoke;
 }
 
-#navbarNav a {
+#nave div nav .navbar-toggler {
+  color: whitesmoke;
+}
+
+#nave #navbarNav a {
   text-align: center;
   font-size: 20px;
   color: whitesmoke;
 }
 
-#navbarNav a:hover {
+#nave #navbarNav a:hover {
   color: black;
 }
 
@@ -36,7 +43,7 @@
 /* footer */
 #footer-socials {
   text-align: center;
-  width: width 100%;
+  width: 100%;
   font-size: 20px;
 }
 
@@ -47,20 +54,59 @@
 /* footer */
 /* MAIN DE PAGINA PRINCIPAL */
 body {
-  background-color: #aaa9a9;
+  background-color: white;
 }
 
 body img {
-  width: width 100%;
+  width: 100%;
+}
+
+#jumbotron1 {
+  background-color: white;
+  height: 100px;
+}
+
+#jumbotron1 h1 {
+  color: #3a3a3a;
+}
+
+#jumbotron1 .fa {
+  font-size: 30px;
+  color: #3a3a3a;
+  letter-spacing: 30px;
+  text-decoration: none;
+}
+
+#jumbotron1 .fa .fa:hover {
+  color: black;
+  opacity: 0.7;
 }
 
 .jumbotron-fluid {
-  border-bottom: black solid 3px;
-  border-top: black solid 3px;
+  border-top: black solid 4px;
 }
 
 #img1 {
-  width: width 100%;
+  width: 40%;
+}
+
+#jumbotronbg {
+  background-image: url(./imgs/jumbotronbg.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#jumbotronbg iframe {
+  width: 400px;
 }
 
 #img2 {
@@ -69,15 +115,15 @@ body img {
 }
 
 h2 {
-  color: red;
+  color: white;
   font-size: small;
-  width: width 100%;
+  width: 100%;
   text-align: center;
 }
 
 iframe {
   width: 80%;
-  height: 300px;
+  height: 400px;
   margin-top: 20px;
 }
 
@@ -86,10 +132,10 @@ iframe {
 }
 
 #ultimosalbums {
-  border-top: black solid 3px;
-  border-bottom: black solid 3px;
+  border-top: black solid 4px;
   margin-bottom: 50px;
   text-align-last: center;
+  background-color: white;
 }
 
 #ultimosalbums h2 {
@@ -107,7 +153,7 @@ iframe {
 }
 
 .carousel-item img {
-  width: width 100%;
+  width: 100%;
 }
 
 .jumbotron {
@@ -132,7 +178,7 @@ iframe {
 /* Pag VIDEOS */
 /* PAG SERVICIOS */
 #calendario {
-  width: width 100%;
+  width: 100%;
 }
 
 /* PAG SERVICIOS */
@@ -180,7 +226,7 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: width 100%;
+  width: 100%;
 }
 
 .socials {
@@ -209,7 +255,7 @@ footer {
   h2 {
     color: white;
     font-size: small;
-    width: width 100%;
+    width: 100%;
     text-align: center;
   }
   iframe {
@@ -249,7 +295,7 @@ footer {
     width: 75%;
   }
   .row img {
-    width: width 100%;
+    width: 100%;
   }
   #img1 {
     width: 40%;
@@ -257,7 +303,7 @@ footer {
   h2 {
     color: white;
     font-size: small;
-    width: width 100%;
+    width: 100%;
     text-align: center;
   }
   iframe {
@@ -269,7 +315,7 @@ footer {
     margin-top: 40px;
   }
   .col-md-8 {
-    max-width: width 100%;
+    max-width: 100%;
   }
   /* pag contacto */
   /*  PAG IMAGENES */
@@ -299,15 +345,15 @@ footer {
     margin-top: 60px;
   }
   #img2 img {
-    width: width 100%;
+    width: 100%;
   }
   .row img {
-    width: width 100%;
+    width: 100%;
   }
   h2 {
     color: white;
     font-size: small;
-    width: width 100%;
+    width: 100%;
     text-align: center;
   }
   iframe {
@@ -319,7 +365,7 @@ footer {
     margin-top: 40px;
   }
   .col-md-8 {
-    max-width: width 100%;
+    max-width: 100%;
   }
   /* pag contacto */
   /*  PAG IMAGENES */
