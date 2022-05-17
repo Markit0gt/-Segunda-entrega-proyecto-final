@@ -5,17 +5,18 @@
 @import "_variables";
 /* header */
 #nave{
-    background-color: $color1;
+    background-color: $white;
+    border-bottom: $bordes;
     div{
-        width: 100%;
+        width: $fullwidth;
         nav{
             display: flex;
             justify-content: center;
             a{
-                color: $color3;
+                color: $color1;
             }
             .navbar-toggler{
-            color: $color3;
+            color: $color1;
             }
         }
     }
@@ -23,10 +24,14 @@
         a{
             text-align: center;
             font-size: 20px;
-            color: $color3;
         }
-        a:hover{
-            color: black;
+    }
+    .navbar{
+        button{
+            span{
+                color: $whitesmoke;
+            }
+            
         }
     }
 }
@@ -35,10 +40,10 @@
 /* footer */
 #footer-socials{
     text-align: center;
-    width: 100%;
+    width: $fullwidth;
     font-size: 20px;
     a{
-        color: $color1;
+        color: $white;
     }
 }
 /* footer */
@@ -46,87 +51,155 @@
 body{
     background-color: $white;
     img{
-        width: 100%;
+        width: $fullwidth;
     }
 }
 #jumbotron1{
-    background-color: $color2;
-    height: 100px;
+    background-color: $white;
+    height: 200px;
+    margin-top: 100px;
     h1{
-        color: $color1;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        font-size: 40px;
+        text-shadow: 0 1px 0 #ccc, 
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
     }
     .fa {
+        margin-top: 40px;
         font-size: 30px;
         color: $color1;
         letter-spacing: 30px;
         text-decoration: none;
-        .fa:hover{
+        &:hover{
             color: black;
-            opacity: 0.7;
         }
     }
 }
 
-.jumbotron-fluid{
-    border-top: $bordes;
-}
-#img1{
-    width: 40%;
-}
+
+
 #jumbotronbg{
     background-image: url(./imgs/jumbotronbg.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    iframe{
-        width: 400px;
+    border-top: $bordes;
+    border-bottom: $bordes;
+    
+    #img1{
+        width: $width80/2;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    h3{
+        font-family: 'Ubuntu', sans-serif;
+        text-shadow: 0 1px 0 #ccc, 
+            0 2px 0 #c9c9c9,
+            0 3px 0 #bbb,
+            0 4px 0 #b9b9b9,
+            0 5px 0 #aaa,
+            0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+    }
+    p{
+        width: $width80;
+        text-shadow: 2px 2px 20px white;
+        text-align: justify;
+        font-family: 'Oswald', sans-serif;
+        // text-decoration: underline $whitesmoke;
+    }
+    div{
+        h3{
+            margin-top: 20px;
+            font-family: 'Ubuntu', sans-serif;;
+            text-shadow: 0 1px 0 #ccc, 
+            0 2px 0 #c9c9c9,
+            0 3px 0 #bbb,
+            0 4px 0 #b9b9b9,
+            0 5px 0 #aaa,
+            0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+        }
+        iframe{
+            width: $fullwidth;
+            padding-bottom: 40px;
+        }
     }
 }
 
-#img2{
-    text-align: center;
-    margin-top: 20px;
-}
-h2{
-    color: $color2;
-    font-size: small;
-    width: 100%;
-    text-align: center;
-}
-iframe{
-    width: 80%;
-    height: 400px;
-    margin-top: 20px;
-}
 #iframe{
     text-align: center;
+    iframe{
+        width: $width80;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-top: 30px;
+        a{
+            text-decoration: none;
+            color: green;
+            &:hover{
+                color: black;
+                text-decoration: underline;
+            
+        }
+        }
+    }
 }
 #ultimosalbums{
     border-top: $bordes;
     margin-bottom: 50px;
-    text-align-last: center;
-    background-color: $color2;
+    text-align: center;
+    background-color: $white;
     h2{
         color: black;
-        font-size: 40px;
+        font-size: 35px;
+        width: $fullwidth;
+    }
+    iframe{
+        width: $fullwidth;
     }
 }
 /* MAIN DE PAGINA PRINCIPAL */
 /*  PAG IMAGENES */
 #demo{
-    width: 95%;
+    width: $width80+15%;
     margin-top: 100px;
     box-shadow: 6px 5px 5px black;
 }
 .carousel-item{
     img{
-        width: 100%;
+        width: $fullwidth;
     }
 }
 .jumbotron{
     margin-top: 20px;
-    width: 70%;
+    width: $width50+20%;
     border: solid black 3px;
 }
 /*  PAG IMAGENES */
@@ -136,7 +209,7 @@ iframe{
     color: black;
 }
 .embed-responsive{
-    width: 80%;
+    width: $width80;
     margin-top: 10px;
     margin-bottom: 50px;
     overflow: visible;
@@ -144,7 +217,7 @@ iframe{
 /* Pag VIDEOS */
 /* PAG SERVICIOS */
 #calendario{
-    width: 100%;
+    width: $fullwidth;
 }
 /* PAG SERVICIOS */
 /* PAG CONTACTOS */
@@ -164,10 +237,10 @@ fieldset{
     margin-top: 60px;
 }
 .bigicon{
-    color: $color3;
+    color: $whitesmoke;
 }
 .text-center{
-    color: $color3;
+    color: $whitesmoke;
 }
 #jumbotroncontac {
     margin-top: 20px;
@@ -178,7 +251,7 @@ footer{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: $fullwidth;
 }
 .socials{
     letter-spacing: 40px;
@@ -188,29 +261,37 @@ footer{
 /* Bootsrap */
 .form-group{
     text-align: center;
-    width: 80%;
+    width: $width80;
     label{
         color: rgb(168, 168, 168);
         font-size: 20px;
     }
 }
 @media (min-width: 576px){
-    #img2{
-        margin-top: 20px;
+    #jumbotronbg{
+        #img1{
+            width: max-content;
+        }
+        .ultimovideo{
+            margin-top: 20px;
+        }
     }
-
-    #img1{
-        width: 50%;
+    #iframe{
+        iframe{
+            width: $fullwidth;
+        }
     }
-    h2{
-        color: $color2;
-        font-size: small;
-        width: 100%;
-        text-align: center;
-    }
-    iframe{
-        width: 80%;
-        margin-top: 20px;
+    #ultimosalbums{
+        h2{
+            margin-top: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        div{
+            iframe{
+                width: $width50+15%;
+            }
+        }
     }
     /* pag contacto */
     fieldset{
@@ -232,39 +313,40 @@ footer{
     /* Pag VIDEOS */
     /* PAG SERVICIOS */
     #calendario{
-        width: 80%;
+        width: $width80;
     }
     /* PAG SERVICIOS */
 }
 @media (min-width: 768px){
-    #img2{
-        margin-top: 10px;
-        img{
-            width: 75%;
+    #jumbotronbg{
+        p{
+            width: $width50+10%;
+        }
+        .ultimovideo{
+            margin-top: 40px;
         }
     }
-    .row img{
-        width: 100%;
+    #iframe{
+        iframe{
+            width: $width50+10%;
+        }
     }
-    #img1{
-        width: 40%;
-    }
-    h2{
-        color: $color2;
-        font-size: small;
-        width: 100%;
-        text-align: center;
-    }
-    iframe{
-        width: 80%;
-        margin-top: 10px;
+    #ultimosalbums{
+        h2{
+            margin-top: 40px;
+        }
+        div{
+            iframe{
+                width: $width50+15%;
+            }
+        }
     }
     /* pag contacto */
     fieldset{
         margin-top: 40px;
     }
     .col-md-8{
-        max-width: 100%;
+        max-width: $fullwidth;
     }
     /* pag contacto */
     /*  PAG IMAGENES */
@@ -273,80 +355,91 @@ footer{
     }
     #demo{
         margin-top: 50px;
-        width: 85%;
+        width: $width80+5%;
     }
     /*  PAG IMAGENES */
     /* Pag VIDEOS */
     .embed-responsive{
-        width: 75%;
+        width: $width50+25%;
     }
     #jumbotronvid{
-        width: 60%;
+        width: $width50+10%;
     }
     /* Pag VIDEOS */
 }
 @media (min-width: 992px){
-    #img1{
-        width: 25%;
-    }
-    #img2{
-        margin-top: 60px;
-        img{
-            width: 100%;
+    #navbarnav{
+        ul{
+            li{
+                a{
+                    text-align: center;
+                }
+            }
         }
     }
-    .row img{
-        width: 100%;
+    #jumbotronbg{
+        p{
+            width: $width50+10%;
+        }
+        .ultimovideo{
+            margin-top: 40px;
+        }
     }
-    h2{
-        color: $color2;
-        font-size: small;
-        width: 100%;
-        text-align: center;
+    #iframe{
+        iframe{
+            width: $width50;
+        }
     }
-    iframe{
-        width: 80%;
-        margin-top: 60px;
+    #ultimosalbums{
+        h2{
+            margin-top: 40px;
+            width: $fullwidth;
+        }
+        div{
+            iframe{
+                width: $fullwidth;
+            }
+        }
     }
     /* pag contacto */
     fieldset{
         margin-top: 40px;
     }
     .col-md-8{
-        max-width: 100%;
+        max-width: $fullwidth;
     }
     /* pag contacto */
     /*  PAG IMAGENES */
     .jumbotron {
         margin-top: 20px;
-        width: 60%;
+        width: $width50+10%;
     }
     #demo{
         margin-top: 50px;
-        width: 75%;
+        width: $width50+25%;
     }
     /*  PAG IMAGENES */
     /* Pag VIDEOS */
     .embed-responsive{
-        width: 70%;
+        width: $width50+20%;
     }
     #jumbotronvid{
-        width: 50%;
+        width: $width50;
     }
     /* Pag VIDEOS */
     /* PAG SERVICIOS */
     #calendario{
-        width: 65%;
+        width: $width50+25%;
     }
     /* PAG SERVICIOS */
 }
 @media (min-width: 1200px){
     /* pag imagenes */
     .jumbotron{
-        width: 40%;
+        width: $width80/2;
     }
     #demo{
-        width: 60%;
+        width: $width50+10%;
     }
     /* pag imagenes */
     // Pag main
@@ -354,4 +447,5 @@ footer{
         margin-top: 2%;
     }
     // pag main
+
 }
