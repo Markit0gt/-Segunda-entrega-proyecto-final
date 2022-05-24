@@ -3,9 +3,41 @@
   padding: 0%;
 }
 
+.btn--facebook {
+  color: #3b5998;
+}
+
+.btn--facebook:hover {
+  color: whitesmoke;
+}
+
+.btn--instagram {
+  color: #3f729b;
+}
+
+.btn--instagram:hover {
+  color: whitesmoke;
+}
+
+.btn--youtube {
+  color: #b2071d;
+}
+
+.btn--youtube:hover {
+  color: whitesmoke;
+}
+
+.btn--soundcloud {
+  color: #ff7700;
+}
+
+.btn--soundcloud:hover {
+  color: whitesmoke;
+}
+
 /* header */
 #nave {
-  background-color: white;
+  background-color: whitesmoke;
   border-bottom: black solid 4px;
 }
 
@@ -24,6 +56,8 @@
 
 #nave div nav a {
   color: #3a3a3a;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #nave div nav .navbar-toggler {
@@ -32,58 +66,93 @@
 
 #nave #navbarNav a {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #3a3a3a;
 }
 
-#nave .navbar button span {
-  color: whitesmoke;
+#nave .navbar button {
+  width: 50px;
+  height: 30px;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, black), color-stop(21%, white), color-stop(37%, white), color-stop(38%, black), color-stop(59%, black), color-stop(60%, white), color-stop(77%, white), color-stop(78%, black));
+  background: linear-gradient(180deg, black 20%, white 21%, white 37%, black 38%, black 59%, white 60%, white 77%, black 78%);
 }
 
 /* header */
 /* footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 #footer-socials {
   text-align: center;
   width: 100%;
-  font-size: 20px;
+  background-color: black;
+}
+
+#footer-socials .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #footer-socials a {
-  color: white;
+  font-size: 25px;
 }
 
 /* footer */
 /* MAIN DE PAGINA PRINCIPAL */
 body {
-  background-color: white;
-}
-
-body img {
-  width: 100%;
+  background-color: whitesmoke;
 }
 
 #jumbotron1 {
-  background-color: white;
   height: 200px;
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #jumbotron1 h1 {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  font-size: 40px;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-}
-
-#jumbotron1 .fa {
-  margin-top: 40px;
+  width: 100%;
   font-size: 30px;
-  color: #3a3a3a;
-  letter-spacing: 30px;
-  text-decoration: none;
+  font-size: 40px;
 }
 
-#jumbotron1 .fa:hover {
-  color: black;
+#jumbotron1 a {
+  text-decoration: none;
+  font-size: 25px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  font-family: 'Ubuntu', sans-serif;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 #jumbotronbg {
@@ -112,7 +181,11 @@ body img {
 
 #jumbotronbg h3 {
   font-family: 'Ubuntu', sans-serif;
+  text-align: center;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
 }
 
 #jumbotronbg p {
@@ -125,7 +198,11 @@ body img {
 #jumbotronbg div h3 {
   margin-top: 20px;
   font-family: 'Ubuntu', sans-serif;
+  text-align: center;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
 }
 
 #jumbotronbg div iframe {
@@ -145,7 +222,13 @@ body img {
 }
 
 #iframe h3 {
-  margin-top: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
+  color: whitesmoke;
 }
 
 #iframe h3 a {
@@ -159,20 +242,30 @@ body img {
 }
 
 #ultimosalbums {
+  background-image: url(./imgs/bgjumb2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0%;
   border-top: black solid 4px;
   margin-bottom: 50px;
   text-align: center;
   background-color: white;
 }
 
-#ultimosalbums h2 {
-  color: black;
-  font-size: 35px;
+#ultimosalbums h3 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
+  color: whitesmoke;
   width: 100%;
 }
 
 #ultimosalbums iframe {
   width: 100%;
+  margin-bottom: 5px;
 }
 
 /* MAIN DE PAGINA PRINCIPAL */
@@ -253,19 +346,6 @@ fieldset {
 }
 
 /* PAG CONTACTOS */
-/* footer */
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.socials {
-  letter-spacing: 40px;
-}
-
-/* footer */
 /* Bootsrap */
 .form-group {
   text-align: center;
@@ -363,11 +443,38 @@ footer {
     width: 60%;
   }
   /* Pag VIDEOS */
+  #footer-socials a {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 992px) {
-  #navbarnav ul li a {
-    text-align: center;
+  #navbarNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #navbarNav a {
+    -webkit-box-shadow: inset 0 0 0 0 #3a3a3a;
+            box-shadow: inset 0 0 0 0 #3a3a3a;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    -webkit-transition: color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+    transition: color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+  }
+  #navbarNav a:hover {
+    -webkit-box-shadow: inset 250px 0 0 0 #3a3a3a;
+            box-shadow: inset 250px 0 0 0 #3a3a3a;
+    color: red;
   }
   #jumbotronbg p {
     width: 60%;

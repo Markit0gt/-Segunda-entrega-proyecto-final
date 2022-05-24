@@ -5,3 +5,42 @@ $whitesmoke: whitesmoke;
 $fullwidth: 100%;
 $width80: 80%;
 $width50: 50%;
+$textefect:0 1px 0 #ccc,
+0 2px 0 #c9c9c9,
+0 3px 0 #bbb,
+0 4px 0 #b9b9b9,
+0 5px 0 #aaa,
+0 6px 1px rgba(0, 0, 0, .1),
+0 0 5px rgba(0, 0, 0, .1),
+0 1px 3px rgba(0, 0, 0, .3),
+0 3px 5px rgba(0, 0, 0, .2),
+0 5px 10px rgba(0, 0, 0, .25),
+0 10px 10px rgba(0, 0, 0, .2),
+0 20px 20px rgba(0, 0, 0, .15);
+$burguerlist: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(255,255,255,1) 21%, rgba(255,255,255,1) 37%, rgba(0,0,0,1) 38%, rgba(0,0,0,1) 59%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 77%, rgba(0,0,0,1) 78%);
+// estiloshx
+@mixin hestilo ($h1) {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    text-shadow:$textefect;
+    width: $fullwidth;
+    font-size: 30px;
+    @if ($h1 = "h1") {
+        font-size: 40px;
+    }
+}
+//colores boton 
+$colors:(
+    facebook:#3b5998,
+    instagram:#3f729b,
+    youtube:#b2071d,
+    soundcloud:#ff7700,
+);
+@each $name-color, $color in $colors {
+    .btn--#{$name-color}{
+        color: $color;
+        &:hover{
+            color:$whitesmoke;
+        }
+    }
+}
