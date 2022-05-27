@@ -2,41 +2,48 @@
     margin: 0%;
     padding: 0%;
 }
+
 @import "_variables";
 
 /* header */
-#nave{
+#nave {
     background-color: $whitesmoke;
     border-bottom: $bordes;
-    div{
+
+    div {
         width: $fullwidth;
-        nav{
+
+        nav {
             display: flex;
             justify-content: center;
-            a{
+
+            a {
                 color: $color1;
                 font-size: 25px;
                 font-family: 'Ubuntu', sans-serif;
             }
-            .navbar-toggler{
-            color: $color1;
+
+            .navbar-toggler {
+                color: $color1;
             }
         }
     }
-    #navbarNav{
-        a{
+
+    #navbarNav {
+        a {
             text-align: center;
             font-size: 25px;
             font-family: 'Ubuntu', sans-serif;
             color: $color1;
         }
     }
-    .navbar{
-        button{
-                width: 50px;
-                height: 30px;
-                background: rgb(0,0,0);
-                background: $burguerlist;
+
+    .navbar {
+        button {
+            width: 50px;
+            height: 30px;
+            background: rgb(0, 0, 0);
+            background: $burguerlist;
         }
     }
 }
@@ -44,52 +51,57 @@
 /* header */
 /* footer */
 
-footer{
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: $fullwidth;
 }
-#footer-socials{
+
+#footer-socials {
     text-align: center;
     width: $fullwidth;
     background-color: black;
-    .socials{
+
+    .socials {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
     }
-    a{
+
+    a {
         font-size: 25px;
     }
 }
+
 /* footer */
 /* MAIN DE PAGINA PRINCIPAL */
-body{
+body {
     background-color: $whitesmoke;
 }
-#jumbotron1{
+
+#jumbotron1 {
     height: 200px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    h1{
+    h1 {
         @include hestilo(h1);
+        color: $whitesmoke;
     }
-    a{
-        text-decoration: none;
-        font-size: 25px;
-        align-items: stretch;
-        font-family: 'Ubuntu', sans-serif;
-        height: max-content;
+    .btn--youtube {
+        @include redes(#b2071d)
+    }
+    .btn--soundcloud{
+        @include redes(#ff7700)
     }
 }
 
 
 
-#jumbotronbg{
+#jumbotronbg {
     background-image: url(./imgs/jumbotronbg.jpg);
     background-size: cover;
     background-position: center;
@@ -98,57 +110,63 @@ body{
     align-items: center;
     border-top: $bordes;
     border-bottom: $bordes;
-    
-    #img1{
+
+    #img1 {
         width: $width80/2;
         border-radius: 10px;
         margin-top: 20px;
     }
-    h3{
+
+    h3 {
         @include hestilo(h3);
+        color: $whitesmoke;
     }
-    p{
-        width: $width80;
-        text-shadow: 2px 2px 20px white;
-        text-align: justify;
-        font-family: 'Oswald', sans-serif;
-        // text-decoration: underline $whitesmoke;
+
+    p {
+        @include pestilo
     }
-    div{
-        h3{
+
+    div {
+        h3 {
             margin-top: 20px;
             @include hestilo(h2);
         }
-        iframe{
+
+        iframe {
             width: $fullwidth;
             padding-bottom: 40px;
         }
     }
 }
 
-#iframe{
+#iframe {
     text-align: center;
-    iframe{
+
+    iframe {
         width: $width80;
         height: 400px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    h3{
+
+    h3 {
         @include hestilo(h3);
         color: $whitesmoke;
-        a{
+
+        a {
             text-decoration: none;
             color: green;
-            &:hover{
+
+            &:hover {
                 color: black;
                 text-decoration: underline;
-            
-        }
+
+            }
         }
     }
 }
-#ultimosalbums{
+
+#ultimosalbums {
     background-image: url(./imgs/bgjumb2.jpg);
     background-size: cover;
     background-position: center;
@@ -157,282 +175,392 @@ body{
     margin-bottom: 50px;
     text-align: center;
     background-color: $white;
-    h3{
+
+    h3 {
         @include hestilo(h3);
         color: $whitesmoke;
         width: $fullwidth;
     }
-    iframe{
+
+    iframe {
         width: $fullwidth;
         margin-bottom: 5px;
     }
 }
+
 /* MAIN DE PAGINA PRINCIPAL */
 /*  PAG IMAGENES */
-#demo{
+#imagenes{
+    @include estilopag;
+    .btn--instagram{
+        @include redes(#3f729b)
+    }
+}
+#demo {
     width: $width80+15%;
     margin-top: 100px;
+    margin-bottom: 100px;
     box-shadow: 6px 5px 5px black;
 }
-.carousel-item{
-    img{
+
+.carousel-item {
+    img {
         width: $fullwidth;
     }
 }
-.jumbotron{
+
+.jumbotron {
     margin-top: 20px;
     width: $width50+20%;
     border: solid black 3px;
 }
+
 /*  PAG IMAGENES */
 /* Pag VIDEOS */
+#videos{
+    @include estilopag;
+    .btn--youtube{
+        @include redes(#b2071d);
+    }
+}
+.videos{
+    display: flex;
+    flex-direction: column;
+    width: $fullwidth;
+    align-items: center;
+    margin-bottom: 100px;
+    iframe{
+        width: fit-content;
+        margin: 10px;
+    }
+}
 
-.btn:hover{
-    color: black;
-}
-.embed-responsive{
-    width: $width80;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    overflow: visible;
-}
 /* Pag VIDEOS */
 /* PAG SERVICIOS */
+#servicios {
+    @include estilopag;
+    .btn--instagram{
+        @include redes(#3f729b)
+    }
+    .btn--facebook{
+        @include redes(#3b5998)
+    }
+}
 #calendario{
     width: $fullwidth;
-}
-/* PAG SERVICIOS */
-/* PAG CONTACTOS */
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
-fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
-}
-.bigicon{
-    color: $whitesmoke;
-}
-.text-center{
-    color: $whitesmoke;
-}
-#jumbotroncontac {
-    margin-top: 20px;
-}
-/* PAG CONTACTOS */
-
-/* Bootsrap */
-.form-group{
-    text-align: center;
-    width: $width80;
-    label{
-        color: rgb(168, 168, 168);
-        font-size: 20px;
+    padding-bottom: 80px;
+    iframe{
+        width: $width80;
+        height: 350px;
+    }
+    h3{
+        @include hestilo(h3);
+        color: $whitesmoke;
+        margin-bottom: 50px;
     }
 }
-@media (min-width: 576px){
-    #jumbotronbg{
-        #img1{
+/* PAG SERVICIOS */
+/* PAG CONTACTOS */
+#contacto{
+    @include estilopag;
+    .btn--gmail{
+        @include redes(#C71610)
+    }
+    .btn--outlook{
+        @include redes(#0072C6)
+    }
+}
+#formulario{
+    background-color:  $color1;
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    .form-group{
+        text-align: center;
+        font-size: 30px;
+        color: $whitesmoke;
+        .btn{
+            background-color: $whitesmoke;
+            border: black solid 2px;
+            &:hover{
+                color: $whitesmoke;
+                background-color: $color1;
+                border: $white solid 2px;
+            }
+            }
+    }
+}
+
+
+/* PAG CONTACTOS */
+
+@media (min-width: 576px) {
+    #jumbotronbg {
+        #img1 {
             width: max-content;
         }
-        .ultimovideo{
+
+        .ultimovideo {
             margin-top: 20px;
         }
     }
-    #iframe{
-        iframe{
+
+    #iframe {
+        iframe {
             width: $fullwidth;
         }
     }
-    #ultimosalbums{
-        h2{
+
+    #ultimosalbums {
+        h2 {
             margin-top: 40px;
             text-align: center;
             margin-bottom: 40px;
         }
-        div{
-            iframe{
+
+        div {
+            iframe {
                 width: $width50+15%;
             }
         }
     }
+
     /* pag contacto */
-    fieldset{
-        margin-top: 20px;
-    }
     /* pag contacto */
     /*  PAG IMAGENES */
     .jumbotron {
         margin-top: 20px;
     }
-    #demo{
+
+    #demo {
         margin-top: 50px;
     }
+
     /*  PAG IMAGENES */
     /* Pag VIDEOS */
-    .embed-responsive{
-        margin-top: 15px;
-    }
     /* Pag VIDEOS */
     /* PAG SERVICIOS */
     #calendario{
-        width: $width80;
+        width: $fullwidth;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 80px;
+        iframe{
+            width: $width80;
+            height: 400px;
+        }
+        h3{
+            @include hestilo(h3);
+            color: $whitesmoke;
+            margin-bottom: 50px;
+        }
     }
     /* PAG SERVICIOS */
 }
-@media (min-width: 768px){
-    #jumbotronbg{
-        p{
+
+@media (min-width: 768px) {
+    #jumbotronbg {
+        p {
             width: $width50+10%;
         }
-        .ultimovideo{
+
+        .ultimovideo {
             margin-top: 40px;
         }
     }
-    #iframe{
-        iframe{
+
+    #iframe {
+        iframe {
             width: $width50+10%;
         }
     }
-    #ultimosalbums{
-        h2{
+
+    #ultimosalbums {
+        h2 {
             margin-top: 40px;
         }
-        div{
-            iframe{
+        div {
+            iframe {
                 width: $width50+15%;
             }
         }
     }
-    /* pag contacto */
-    fieldset{
-        margin-top: 40px;
+// pag servicios
+    #servicios{
+        height: 350px;
     }
-    .col-md-8{
-        max-width: $fullwidth;
+    #calendario{
+        iframe{
+            height: 600px;
+        }
+    }
+// pag servicios
+    /* pag contacto */
+    #contacto{
+        height: 350px;
+    }
+    .form-horizontal{
+        display: flex;
+        justify-content: center;
+        #formulario{
+            width: $width80;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .form-group{
+                div{
+                    input{
+                        width: $fullwidth;
+                    }
+                }
+            }
+        }
     }
     /* pag contacto */
     /*  PAG IMAGENES */
-    .jumbotron {
-        margin-top: 20px;
+    #imagenes{
+        height: 350px;
     }
-    #demo{
+    #demo {
         margin-top: 50px;
         width: $width80+5%;
     }
     /*  PAG IMAGENES */
     /* Pag VIDEOS */
-    .embed-responsive{
-        width: $width50+25%;
+    #videos{
+        height: 350px;
     }
-    #jumbotronvid{
-        width: $width50+10%;
+    .videos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        iframe{
+            margin: 20px;
+        }
     }
     /* Pag VIDEOS */
     //footer
-    #footer-socials{
-        a{
+    #footer-socials {
+        a {
             font-size: 30px;
         }
     }
     // footer
-}
-@media (min-width: 992px){
-    #navbarNav{
-        ul{
+@media (min-width: 992px) {
+    #navbarNav {
+        ul {
             display: flex;
             flex-direction: row;
             width: 100%;
             justify-content: space-around;
         }
-        a{
-            box-shadow: inset 0 0 0 0 $color1;
+
+        .nav-link {
+            box-shadow: inset 0 0 0 0 $whitesmoke;
+            border-radius: 5px;
             margin: 0 -.25rem;
             padding: 0 .25rem;
             transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-            &:hover{
-                box-shadow: inset 250px 0 0 0 $color1;
-                color: red;
+
+            &:hover {
+                box-shadow: inset 250px 0 0 0 gray;
+                border-radius: 10px;
+
             }
         }
     }
-    #jumbotronbg{
-        p{
+
+    #jumbotronbg {
+        p {
             width: $width50+10%;
         }
-        .ultimovideo{
+
+        .ultimovideo {
             margin-top: 40px;
         }
     }
-    #iframe{
-        iframe{
+
+    #iframe {
+        iframe {
             width: $width50;
         }
     }
-    #ultimosalbums{
-        h2{
+
+    #ultimosalbums {
+        h2 {
             margin-top: 40px;
             width: $fullwidth;
         }
-        div{
-            iframe{
+
+        div {
+            iframe {
                 width: $fullwidth;
             }
         }
     }
+
     /* pag contacto */
-    fieldset{
-        margin-top: 40px;
+    #contacto{
+        height: 400px;
     }
-    .col-md-8{
-        max-width: $fullwidth;
+    .form-horizontal{
+        #formulario{
+            width: $width50+10%;
+        }
     }
     /* pag contacto */
     /*  PAG IMAGENES */
+    #imagenes{
+        height: 400px;
+    }
     .jumbotron {
         margin-top: 20px;
         width: $width50+10%;
     }
-    #demo{
+
+    #demo {
         margin-top: 50px;
         width: $width50+25%;
     }
+
     /*  PAG IMAGENES */
     /* Pag VIDEOS */
-    .embed-responsive{
-        width: $width50+20%;
-    }
-    #jumbotronvid{
-        width: $width50;
+    #videos{
+        height: 400px;
     }
     /* Pag VIDEOS */
     /* PAG SERVICIOS */
-    #calendario{
-        width: $width50+25%;
+    #servicios{
+        height: 400px;
+        p{
+            font-size: 18px;
+        }
     }
+    #calendario {
+        iframe{
+            width: $width50+20%;
+        }
+    }
+
     /* PAG SERVICIOS */
 }
-@media (min-width: 1200px){
+
+@media (min-width: 1200px) {
     /* pag imagenes */
-    .jumbotron{
+    .jumbotron {
         width: $width80/2;
     }
-    #demo{
+    #demo {
         width: $width50+10%;
     }
     /* pag imagenes */
     // Pag main
-    #img2{
+    #img2 {
         margin-top: 2%;
     }
     // pag main
-
-}
+}}

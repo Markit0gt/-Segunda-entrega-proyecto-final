@@ -35,6 +35,22 @@
   color: whitesmoke;
 }
 
+.btn--outlook {
+  color: #0072C6;
+}
+
+.btn--outlook:hover {
+  color: whitesmoke;
+}
+
+.btn--gmail {
+  color: #C71610;
+}
+
+.btn--gmail:hover {
+  color: whitesmoke;
+}
+
 /* header */
 #nave {
   background-color: whitesmoke;
@@ -141,18 +157,63 @@ body {
   width: 100%;
   font-size: 30px;
   font-size: 40px;
+  color: whitesmoke;
 }
 
-#jumbotron1 a {
+#jumbotron1 .btn--youtube {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 25px;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  font-family: 'Ubuntu', sans-serif;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+#jumbotron1 .btn--youtube::before {
+  content: '';
+  background-color: #b2071d;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#jumbotron1 .btn--youtube:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#jumbotron1 .btn--soundcloud {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+#jumbotron1 .btn--soundcloud::before {
+  content: '';
+  background-color: #ff7700;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#jumbotron1 .btn--soundcloud:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
 }
 
 #jumbotronbg {
@@ -186,13 +247,14 @@ body {
   width: 100%;
   font-size: 30px;
   font-size: 40px;
+  color: whitesmoke;
 }
 
 #jumbotronbg p {
-  width: 80%;
   text-shadow: 2px 2px 20px white;
-  text-align: justify;
   font-family: 'Oswald', sans-serif;
+  color: whitesmoke;
+  text-align: center;
 }
 
 #jumbotronbg div h3 {
@@ -270,9 +332,89 @@ body {
 
 /* MAIN DE PAGINA PRINCIPAL */
 /*  PAG IMAGENES */
+#imagenes {
+  margin-top: 60px;
+  padding-bottom: 100px;
+  height: 300px;
+  margin-bottom: 20px;
+  background-image: url(./imgs/jumbotronbg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: black solid 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+#imagenes h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#imagenes p {
+  width: 100%;
+  text-shadow: 2px 2px 20px white;
+  font-family: 'Oswald', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#imagenes a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#imagenes .btn--instagram {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+#imagenes .btn--instagram::before {
+  content: '';
+  background-color: #3f729b;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#imagenes .btn--instagram:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
 #demo {
   width: 95%;
   margin-top: 100px;
+  margin-bottom: 100px;
   -webkit-box-shadow: 6px 5px 5px black;
           box-shadow: 6px 5px 5px black;
 }
@@ -289,37 +431,218 @@ body {
 
 /*  PAG IMAGENES */
 /* Pag VIDEOS */
-.btn:hover {
-  color: black;
+#videos {
+  margin-top: 60px;
+  padding-bottom: 100px;
+  height: 300px;
+  margin-bottom: 20px;
+  background-image: url(./imgs/jumbotronbg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: black solid 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
 }
 
-.embed-responsive {
-  width: 80%;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  overflow: visible;
+#videos h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#videos p {
+  width: 100%;
+  text-shadow: 2px 2px 20px white;
+  font-family: 'Oswald', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#videos a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#videos .btn--youtube {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+#videos .btn--youtube::before {
+  content: '';
+  background-color: #b2071d;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#videos .btn--youtube:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.videos iframe {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px;
 }
 
 /* Pag VIDEOS */
 /* PAG SERVICIOS */
+#servicios {
+  margin-top: 60px;
+  padding-bottom: 100px;
+  height: 300px;
+  margin-bottom: 20px;
+  background-image: url(./imgs/jumbotronbg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: black solid 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+#servicios h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#servicios p {
+  width: 100%;
+  text-shadow: 2px 2px 20px white;
+  font-family: 'Oswald', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#servicios a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#servicios .btn--instagram {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+#servicios .btn--instagram::before {
+  content: '';
+  background-color: #3f729b;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#servicios .btn--instagram:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#servicios .btn--facebook {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+#servicios .btn--facebook::before {
+  content: '';
+  background-color: #3b5998;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#servicios .btn--facebook:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
 #calendario {
   width: 100%;
-}
-
-/* PAG SERVICIOS */
-/* PAG CONTACTOS */
-.header {
-  color: #36A0FF;
-  font-size: 27px;
-  padding: 10px;
-}
-
-.bigicon {
-  font-size: 35px;
-  color: #36A0FF;
-}
-
-fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,33 +653,159 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 80px;
+}
+
+#calendario iframe {
+  width: 80%;
+  height: 350px;
+}
+
+#calendario h3 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
+
+/* PAG SERVICIOS */
+/* PAG CONTACTOS */
+#contacto {
   margin-top: 60px;
+  padding-bottom: 100px;
+  height: 300px;
+  margin-bottom: 20px;
+  background-image: url(./imgs/jumbotronbg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: black solid 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
 }
 
-.bigicon {
+#contacto h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#contacto p {
+  width: 100%;
+  text-shadow: 2px 2px 20px white;
+  font-family: 'Oswald', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#contacto a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#contacto .btn--gmail {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+#contacto .btn--gmail::before {
+  content: '';
+  background-color: #C71610;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#contacto .btn--gmail:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#contacto .btn--outlook {
+  font-size: 28px;
+  height: 75px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+#contacto .btn--outlook::before {
+  content: '';
+  background-color: #0072C6;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#contacto .btn--outlook:hover::before {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#formulario {
+  background-color: #3a3a3a;
+  padding: 20px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+#formulario .form-group {
+  text-align: center;
+  font-size: 30px;
   color: whitesmoke;
 }
 
-.text-center {
-  color: whitesmoke;
+#formulario .form-group .btn {
+  background-color: whitesmoke;
+  border: black solid 2px;
 }
 
-#jumbotroncontac {
-  margin-top: 20px;
+#formulario .form-group .btn:hover {
+  color: whitesmoke;
+  background-color: #3a3a3a;
+  border: white solid 2px;
 }
 
 /* PAG CONTACTOS */
-/* Bootsrap */
-.form-group {
-  text-align: center;
-  width: 80%;
-}
-
-.form-group label {
-  color: #a8a8a8;
-  font-size: 20px;
-}
-
 @media (min-width: 576px) {
   #jumbotronbg #img1 {
     width: -webkit-max-content;
@@ -378,9 +827,6 @@ fieldset {
     width: 65%;
   }
   /* pag contacto */
-  fieldset {
-    margin-top: 20px;
-  }
   /* pag contacto */
   /*  PAG IMAGENES */
   .jumbotron {
@@ -391,13 +837,35 @@ fieldset {
   }
   /*  PAG IMAGENES */
   /* Pag VIDEOS */
-  .embed-responsive {
-    margin-top: 15px;
-  }
   /* Pag VIDEOS */
   /* PAG SERVICIOS */
   #calendario {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 80px;
+  }
+  #calendario iframe {
     width: 80%;
+    height: 400px;
+  }
+  #calendario h3 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    font-size: 30px;
+    font-size: 40px;
+    color: whitesmoke;
+    margin-bottom: 50px;
   }
   /* PAG SERVICIOS */
 }
@@ -418,17 +886,44 @@ fieldset {
   #ultimosalbums div iframe {
     width: 65%;
   }
-  /* pag contacto */
-  fieldset {
-    margin-top: 40px;
+  #servicios {
+    height: 350px;
   }
-  .col-md-8 {
-    max-width: 100%;
+  #calendario iframe {
+    height: 600px;
+  }
+  /* pag contacto */
+  #contacto {
+    height: 350px;
+  }
+  .form-horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form-horizontal #formulario {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form-horizontal #formulario .form-group div input {
+    width: 100%;
   }
   /* pag contacto */
   /*  PAG IMAGENES */
-  .jumbotron {
-    margin-top: 20px;
+  #imagenes {
+    height: 350px;
   }
   #demo {
     margin-top: 50px;
@@ -436,11 +931,22 @@ fieldset {
   }
   /*  PAG IMAGENES */
   /* Pag VIDEOS */
-  .embed-responsive {
-    width: 75%;
+  #videos {
+    height: 350px;
   }
-  #jumbotronvid {
-    width: 60%;
+  .videos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .videos iframe {
+    margin: 20px;
   }
   /* Pag VIDEOS */
   #footer-socials a {
@@ -448,7 +954,7 @@ fieldset {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 992px) {
   #navbarNav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -461,9 +967,10 @@ fieldset {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  #navbarNav a {
-    -webkit-box-shadow: inset 0 0 0 0 #3a3a3a;
-            box-shadow: inset 0 0 0 0 #3a3a3a;
+  #navbarNav .nav-link {
+    -webkit-box-shadow: inset 0 0 0 0 whitesmoke;
+            box-shadow: inset 0 0 0 0 whitesmoke;
+    border-radius: 5px;
     margin: 0 -.25rem;
     padding: 0 .25rem;
     -webkit-transition: color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
@@ -471,10 +978,10 @@ fieldset {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
   }
-  #navbarNav a:hover {
-    -webkit-box-shadow: inset 250px 0 0 0 #3a3a3a;
-            box-shadow: inset 250px 0 0 0 #3a3a3a;
-    color: red;
+  #navbarNav .nav-link:hover {
+    -webkit-box-shadow: inset 250px 0 0 0 gray;
+            box-shadow: inset 250px 0 0 0 gray;
+    border-radius: 10px;
   }
   #jumbotronbg p {
     width: 60%;
@@ -493,14 +1000,17 @@ fieldset {
     width: 100%;
   }
   /* pag contacto */
-  fieldset {
-    margin-top: 40px;
+  #contacto {
+    height: 400px;
   }
-  .col-md-8 {
-    max-width: 100%;
+  .form-horizontal #formulario {
+    width: 60%;
   }
   /* pag contacto */
   /*  PAG IMAGENES */
+  #imagenes {
+    height: 400px;
+  }
   .jumbotron {
     margin-top: 20px;
     width: 60%;
@@ -511,21 +1021,24 @@ fieldset {
   }
   /*  PAG IMAGENES */
   /* Pag VIDEOS */
-  .embed-responsive {
-    width: 70%;
-  }
-  #jumbotronvid {
-    width: 50%;
+  #videos {
+    height: 400px;
   }
   /* Pag VIDEOS */
   /* PAG SERVICIOS */
-  #calendario {
-    width: 75%;
+  #servicios {
+    height: 400px;
+  }
+  #servicios p {
+    font-size: 18px;
+  }
+  #calendario iframe {
+    width: 70%;
   }
   /* PAG SERVICIOS */
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   /* pag imagenes */
   .jumbotron {
     width: 40%;

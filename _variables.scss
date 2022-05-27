@@ -35,6 +35,8 @@ $colors:(
     instagram:#3f729b,
     youtube:#b2071d,
     soundcloud:#ff7700,
+    outlook: #0072C6,
+    gmail:#C71610,
 );
 @each $name-color, $color in $colors {
     .btn--#{$name-color}{
@@ -42,5 +44,67 @@ $colors:(
         &:hover{
             color:$whitesmoke;
         }
+    }
+}
+// estilos para link redes
+@mixin redes ($redcolor: "x") {
+    font-size: 28px;
+    height: 75px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        background-color: $redcolor;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        height: 8px;
+        transition: all .3s ease-in-out;
+    }
+    &:hover::before {
+        bottom: 0;
+        height: 100%;
+        border-radius: 10px;
+        z-index: -1;
+    }
+}
+// estilo para parrafos
+@mixin pestilo {
+    text-shadow: 2px 2px 20px white;
+    font-family: 'Oswald', sans-serif;
+    color: $whitesmoke;
+    text-align: center;
+}
+// diseño de pagina
+@mixin estilopag {
+    margin-top: 60px;
+    padding-bottom: 100px;
+    height: 300px;
+    margin-bottom: 20px;
+    background-image: url(./imgs/jumbotronbg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: $bordes;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    h1{
+        @include hestilo(h1);
+        color: $white;
+        width: $fullwidth;
+        margin-top: 100px;
+    }
+    p{
+        width: $fullwidth;
+        @include pestilo;
+        padding-bottom: 20px;
+    }
+    a{
+        width: max-content;
     }
 }
